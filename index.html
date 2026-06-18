@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#0c1110" />
+<meta name="description" content="Calculadoras para laboratório e registros de aplicações experimentais de campo." />
+<link rel="manifest" href="manifest.webmanifest" />
 <title>BioCalculo</title>
 <style>
 @font-face{font-family:'Inter var';src:url('fonts/inter.woff2') format('woff2');font-weight:100 900;font-display:swap;font-style:normal}
@@ -96,22 +98,30 @@ p{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.4}
 </style>
 </head>
 <body>
+<nav class="appnav" aria-label="Navegação principal">
+  <a class="active" href="index.html" aria-current="page">Início</a>
+  <a href="calda.html">Laboratório</a>
+  <a href="campo.html">Campo</a>
+</nav>
 <main>
   <section class="card">
     <div class="grid">
       <a class="tile" href="calda.html">
-        <strong>Calda e diluições</strong>
-        <span>PPM, dose por hectare para bancada, ajuste de ingrediente ativo e séries de concentração.</span>
+        <strong>Laboratório</strong>
+        <span>PPM, preparo de soluções, campo para bancada, ajuste de ingrediente ativo e séries de concentração.</span>
         <b>Abrir</b>
       </a>
       <a class="tile" href="campo.html">
-        <strong>Campo e parcelas</strong>
-        <span>Produto por parcela, garrafas, volume morto, bicos, CV e velocidade de passada.</span>
+        <strong>Campo — registro BPL</strong>
+        <span>Aplicações, tratamentos, lotes, condições, calibração, cálculos, evidências e revisões rastreadas.</span>
         <b>Abrir</b>
       </a>
     </div>
   </section>
   <div class="brand">BioCalculo</div>
 </main>
+<script>
+if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(function(){});
+</script>
 </body>
 </html>

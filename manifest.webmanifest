@@ -1,0 +1,11 @@
+{
+  "name": "BioCalculo",
+  "short_name": "BioCalculo",
+  "description": "Calculadoras de laboratório e registros rastreáveis de aplicações experimentais de campo.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c1110",
+  "theme_color": "#0c1110"
+}
